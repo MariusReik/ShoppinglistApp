@@ -32,13 +32,15 @@ class ShoppingListDetailViewModel(application: Application) : AndroidViewModel(a
                 // Load the shopping list
                 _currentList.value = repository.getShoppingListById(listId)
 
-                // Load items for this list
-                repository.getItemsForList(listId).collect { itemsList ->
-                    _items.value = itemsList
+                // Load items for this list - Launch separate coroutine for flow collection
+                launch {
+                    repository.getItemsForList(listId).collect { itemsList ->
+                        _items.value = itemsList
+                        _isLoading.value = false // Set loading to false when items are loaded
+                    }
                 }
             } catch (e: Exception) {
                 e.printStackTrace()
-            } finally {
                 _isLoading.value = false
             }
         }

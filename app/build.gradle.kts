@@ -3,7 +3,6 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     id("kotlin-kapt")
-    id("com.google.gms.google-services")
 }
 
 android {
@@ -62,16 +61,11 @@ dependencies {
     implementation("androidx.room:room-ktx:2.6.1")
     kapt("androidx.room:room-compiler:2.6.1")
 
-    // Firebase BOM
-    implementation(platform("com.google.firebase:firebase-bom:32.7.1"))
-    implementation("com.google.firebase:firebase-firestore-ktx")
-    implementation("com.google.firebase:firebase-auth-ktx")
-
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
 
-    // Drag and Drop (for reordering)
-    implementation("org.burnoutcrew.composereorderable:reorderable:0.9.6")
+    // Drag and Drop (for reordering - we'll add this later)
+    // implementation("org.burnoutcrew.composereorderable:reorderable:0.9.6")
 
     // Material Icons Extended
     implementation("androidx.compose.material:material-icons-extended:1.5.4")
