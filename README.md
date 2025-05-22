@@ -4,14 +4,14 @@ A modern shopping list application built with **Kotlin** and **Jetpack Compose**
 
 ## ✨ Features
 
-- 📝 **Multiple Shopping Lists** - Create and organize different lists for various needs
-- 🛍️ **Item Management** - Add items with custom quantities and completion status
-- ✓ **Progress Tracking** - Check off items as you shop
-- 🎨 **Modern UI** - Clean Material 3 design with gradient themes
-- 💾 **Local Storage** - Data persisted locally using Room database
-- 📱 **Responsive Design** - Optimized for different screen sizes
+- **Multiple Shopping Lists** - Create and organize different lists for various needs
+- **Item Management** - Add items with custom quantities and completion status
+- **Progress Tracking** - Check off items as you shop
+- **Modern UI** - Clean Material 3 design with gradient themes
+- **Local Storage** - Data persisted locally using Room database
+- **Responsive Design** - Optimized for different screen sizes
 
-## 📱 Screenshots
+##  Screenshots
 
 ### Home Screen
 *Main dashboard showing all your shopping lists*
@@ -115,4 +115,5 @@ The app currently supports local functionality with the following capabilities:
 
 ## 👨‍💻 About
 
-Built as a learning project to explore modern Android development with Jetpack Compose and Room database.
+Built as a learning project to explore modern Android development with Jetpack Compose and Room database. 
+Made by Marius Reikeraas.
