@@ -1,31 +1,30 @@
 # 🛒 Shopping List App
 
-A simple, modern shopping list application built with **Kotlin** and **Jetpack Compose**. Create multiple shopping lists, manage items with quantities, and a gradient-based UI design.
+A modern shopping list application built with **Kotlin** and **Jetpack Compose**. Create multiple shopping lists, manage items with quantities, and track your shopping progress.
 
 ## ✨ Features
 
-- 🏠 **Multiple Shopping Lists** - Create and manage different lists (groceries, party supplies, etc.)
-- 📝 **Smart Item Management** - Add items with custom quantities
-- ✅ **Progress Tracking** - Check off items as you shop
-- 🎨 **Beautiful UI** - Modern Material 3 design with gradients
-- 📱 **Responsive Design** - Works perfectly on all screen sizes
-- 💾 **Local Storage** - All data saved locally with Room database
-- 🌙 **Modern Architecture** - MVVM pattern with Jetpack Compose
+- 📝 **Multiple Shopping Lists** - Create and organize different lists for various needs
+- 🛍️ **Item Management** - Add items with custom quantities and completion status
+- ✓ **Progress Tracking** - Check off items as you shop
+- 🎨 **Modern UI** - Clean Material 3 design with gradient themes
+- 💾 **Local Storage** - Data persisted locally using Room database
+- 📱 **Responsive Design** - Optimized for different screen sizes
 
 ## 📱 Screenshots
 
 ### Home Screen
-*gradient background with all your shopping lists*
+*Main dashboard showing all your shopping lists*
 
 ![Home Screen](screenshots/home_screen.jpg)
 
 ### Shopping List Detail
-*Manage items with intuitive quantity controls*
+*Individual list with item management controls*
 
 ![List Detail](screenshots/list_detail.jpg)
 
 ### Add New Item
-*Clean, user-friendly dialog for adding items*
+*Dialog for adding items with quantity selection*
 
 ![Add Item](screenshots/add_item.jpg)
 
@@ -67,21 +66,53 @@ app/src/main/java/com/example/shoppinglistapp/
 - Android SDK API 24 or higher
 - Kotlin 2.0.0
 
-## 📋 How to Use
+### Installation
 
-### Creating Your First Shopping List
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/MariusReik/shopping-list-app.git
+   cd shopping-list-app
+   ```
 
-1. **Launch the app** - You'll see the beautiful home screen
-2. **Tap the + button** - Create your first shopping list
-3. **Enter a name** - Like "Weekly Groceries" or "Party Supplies"
-4. **Start adding items** - Tap your list to open it
+2. **Open in Android Studio**
+   - Launch Android Studio
+   - Select "Open an existing project"
+   - Navigate to the cloned directory
+
+3. **Build and Run**
+   - Let Android Studio sync the project
+   - Click the "Run" button
+   - Choose your device/emulator
+
+## 📋 Usage
+
+### Creating Lists
+1. Launch the app to see the home screen
+2. Tap the + button to create a new shopping list
+3. Enter a descriptive name ("Weekly Shopping etc...")
 
 ### Managing Items
+- **Add items:** Tap the + button within any list
+- **Set quantities:** Use +/- buttons when adding or editing items
+- **Mark complete:** Check the box next to completed items
+- **Delete items:** Tap the delete icon
+- **Edit quantities:** Adjust using the +/- controls on existing items
 
-- **Add items:** Tap the + button in any list
-- **Set quantities:** Use the +/- buttons when adding items
-- **Mark complete:** Check the box when you've got the item
-- **Delete items:** Tap the delete icon (🗑️)
-- **Adjust quantities:** Use +/- buttons on existing items
+## Current Features
 
+The app currently supports local functionality with the following capabilities:
+- Multiple shopping list creation and management
+- Item addition with quantity control
+- Completion status tracking
+- Local data persistence
 
+## Planned Enhancements
+
+- **Drag & Drop** - Reorder items within lists
+- **List Sharing** - Share lists with family members
+- **Categories** - Organize items by type
+- **Smart Suggestions** - Frequently used items
+
+## 👨‍💻 About
+
+Built as a learning project to explore modern Android development with Jetpack Compose and Room database.
